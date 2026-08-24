@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DREY — 2K Card</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#07090f; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; color:#e8eaf0; display:flex; justify-content:center; padding:24px 12px; min-height:100vh; }
+  .card { width:100%; max-width:420px; border-radius:18px; overflow:hidden; position:relative; background:linear-gradient(160deg,#141024 0%,#1a1030 45%,#0d0a18 100%); border:1px solid rgba(167,139,250,.35); box-shadow:0 20px 60px rgba(123,92,255,.25); }
+  .top { background:linear-gradient(135deg,rgba(123,92,255,.28),rgba(167,139,250,.08)); padding:22px 20px 16px; display:flex; gap:16px; align-items:center; border-bottom:1px solid rgba(167,139,250,.25); }
+  .ovr { text-align:center; flex-shrink:0; }
+  .ovr .num { font-size:56px; font-weight:800; line-height:1; background:linear-gradient(180deg,#c4b5fd,#7c5cf0); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .ovr .tier { font-size:10px; font-weight:700; letter-spacing:2px; color:#a78bfa; text-transform:uppercase; }
+  .id .pos { font-size:11px; font-weight:700; letter-spacing:1.5px; color:#a78bfa; text-transform:uppercase; }
+  .id .name { font-size:34px; font-weight:800; letter-spacing:-.5px; line-height:1.1; }
+  .id .team { font-size:12px; color:#9aa0b4; margin-top:3px; }
+  .meta { display:grid; grid-template-columns:repeat(4,1fr); text-align:center; padding:12px 8px; background:rgba(255,255,255,.03); font-size:11px; color:#9aa0b4; }
+  .meta b { display:block; font-size:15px; color:#e8eaf0; font-weight:700; }
+  h3 { font-size:11px; letter-spacing:2px; text-transform:uppercase; color:#a78bfa; margin:18px 20px 8px; }
+  .attr { display:flex; justify-content:space-between; align-items:center; padding:7px 20px; font-size:14px; }
+  .attr .stars { color:#f5b942; font-size:15px; letter-spacing:2px; }
+  .attr .stars .off { color:#3a3f52; }
+  .cols { display:grid; grid-template-columns:1fr 1fr; gap:10px; padding:0 20px; }
+  .box { background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.07); border-radius:10px; padding:12px; }
+  .box h4 { font-size:10px; letter-spacing:1.5px; text-transform:uppercase; margin-bottom:8px; }
+  .box.g h4 { color:#4ade80; } .box.r h4 { color:#f87171; }
+  .box li { font-size:12px; line-height:1.45; color:#c7ccd9; margin-bottom:6px; list-style:none; padding-left:14px; position:relative; }
+  .box li::before { content:'\25B8'; position:absolute; left:0; color:#6b7186; }
+  .badges { display:flex; flex-wrap:wrap; gap:8px; padding:12px 20px 4px; }
+  .badge { font-size:10.5px; font-weight:700; padding:5px 10px; border-radius:999px; letter-spacing:.5px; text-transform:uppercase; }
+  .hof { background:linear-gradient(135deg,#f5b942,#d97706); color:#1a1206; }
+  .sil { background:linear-gradient(135deg,#d4d4d8,#a1a1aa); color:#18181b; }
+  .bro { background:linear-gradient(135deg,#b45309,#7c2d12); color:#fde68a; }
+  .report { margin:14px 20px 18px; padding:14px; border-radius:10px; background:linear-gradient(135deg,rgba(123,92,255,.15),rgba(124,58,237,.05)); border-left:3px solid #7c5cf0; font-size:13px; line-height:1.55; color:#d8dcea; font-style:italic; }
+  .foot { text-align:center; font-size:10px; color:#565c70; padding:0 20px 18px; line-height:1.5; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="top">
+    <div class="ovr"><div class="num">82</div><div class="tier">AMETHYST</div></div>
+    <div class="id">
+      <div class="pos">PG · Floor General</div>
+      <div class="name">DREY</div>
+      <div class="team">Viral Editz / 1BB · @Dreydrey9000 · 3.5 yr vet</div>
+    </div>
+  </div>
+  <div class="meta">
+    <div><b>50</b>repos</div>
+    <div><b>224</b>contribs/yr</div>
+    <div><b>6</b>langs</div>
+    <div><b>7★</b>earned</div>
+  </div>
+
+  <h3>Attributes</h3>
+  <div class="attr"><span>Shipping Velocity</span><span class="stars">★★★★★</span></div>
+  <div class="attr"><span>Range / Versatility</span><span class="stars">★★★★★</span></div>
+  <div class="attr"><span>Originality</span><span class="stars">★★★★☆</span></div>
+  <div class="attr"><span>Stack Discipline (TS-first)</span><span class="stars">★★★★☆</span></div>
+  <div class="attr"><span>Consistency</span><span class="stars">★★★☆☆</span></div>
+  <div class="attr"><span>Docs &amp; Polish</span><span class="stars">★★★☆☆</span></div>
+  <div class="attr"><span>Community Traction</span><span class="stars">★★<span class="off">★★★</span></span></div>
+
+  <h3>Strengths &amp; Weaknesses</h3>
+  <div class="cols">
+    <div class="box g"><h4>Strengths</h4><ul>
+      <li>Fastest ship-per-idea on the squad — 50 repos, 12 live web apps on real domains</li>
+      <li>Absurd range: VS Code fork, video NLE, Swift Mac app, self-healing scraper</li>
+      <li>Builds products with users, not tutorials — every repo is an opinion</li>
+    </ul></div>
+    <div class="box r"><h4>Weaknesses</h4><ul>
+      <li>7 stars / 5 followers — plays the entire season in a private gym</li>
+      <li>Burst-then-move-on pattern: whole repo clusters dumped same-day, then quiet</li>
+      <li>No bio, no name, no profile README — the storefront is empty</li>
+    </ul></div>
+  </div>
+
+  <h3>Badges</h3>
+  <div class="badges">
+    <span class="badge hof">Ship Merchant</span>
+    <span class="badge hof">Shot Creator</span>
+    <span class="badge sil">Two-Way Stack</span>
+    <span class="badge bro">Low Rep</span>
+  </div>
+
+  <div class="report">"Elite offensive engine hidden off-camera. The private 1BB ops aren't even counted here — that's his unfair advantage. The day he plays the public floor (READMEs, stars, one flagship OSS repo), this is an easy 90."</div>
+
+  <div class="foot">Scouted Aug 24, 2026 · github.com/Dreydrey9000 · OVR from public GitHub data only · Key film: ursula (VS Code fork), agentic-cuts (NLE), claude-skills (4★), hydra-scraper</div>
+</div>
+</body>
+</html>
