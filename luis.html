@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LUIS — 2K Card</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#07090f; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; color:#e8eaf0; display:flex; justify-content:center; padding:24px 12px; min-height:100vh; }
+  .card { width:100%; max-width:420px; border-radius:18px; overflow:hidden; background:linear-gradient(160deg,#0b1430 0%,#101c3f 45%,#080d1c 100%); border:1px solid rgba(96,165,250,.35); box-shadow:0 20px 60px rgba(59,130,246,.25); }
+  .top { background:linear-gradient(135deg,rgba(59,130,246,.28),rgba(96,165,250,.08)); padding:22px 20px 16px; display:flex; gap:16px; align-items:center; border-bottom:1px solid rgba(96,165,250,.25); }
+  .ovr { text-align:center; flex-shrink:0; }
+  .ovr .num { font-size:56px; font-weight:800; line-height:1; background:linear-gradient(180deg,#93c5fd,#2563eb); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .ovr .tier { font-size:10px; font-weight:700; letter-spacing:2px; color:#60a5fa; text-transform:uppercase; }
+  .id .pos { font-size:11px; font-weight:700; letter-spacing:1.5px; color:#60a5fa; text-transform:uppercase; }
+  .id .name { font-size:34px; font-weight:800; letter-spacing:-.5px; line-height:1.1; }
+  .id .team { font-size:12px; color:#9aa0b4; margin-top:3px; }
+  .meta { display:grid; grid-template-columns:repeat(4,1fr); text-align:center; padding:12px 8px; background:rgba(255,255,255,.03); font-size:11px; color:#9aa0b4; }
+  .meta b { display:block; font-size:15px; color:#e8eaf0; font-weight:700; }
+  h3 { font-size:11px; letter-spacing:2px; text-transform:uppercase; color:#60a5fa; margin:18px 20px 8px; }
+  .attr { display:flex; justify-content:space-between; align-items:center; padding:7px 20px; font-size:14px; }
+  .attr .stars { color:#f5b942; font-size:15px; letter-spacing:2px; }
+  .attr .stars .off { color:#3a3f52; }
+  .cols { display:grid; grid-template-columns:1fr 1fr; gap:10px; padding:0 20px; }
+  .box { background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.07); border-radius:10px; padding:12px; }
+  .box h4 { font-size:10px; letter-spacing:1.5px; text-transform:uppercase; margin-bottom:8px; }
+  .box.g h4 { color:#4ade80; } .box.r h4 { color:#f87171; }
+  .box li { font-size:12px; line-height:1.45; color:#c7ccd9; margin-bottom:6px; list-style:none; padding-left:14px; position:relative; }
+  .box li::before { content:'\25B8'; position:absolute; left:0; color:#6b7186; }
+  .badges { display:flex; flex-wrap:wrap; gap:8px; padding:12px 20px 4px; }
+  .badge { font-size:10.5px; font-weight:700; padding:5px 10px; border-radius:999px; letter-spacing:.5px; text-transform:uppercase; }
+  .hof { background:linear-gradient(135deg,#f5b942,#d97706); color:#1a1206; }
+  .sil { background:linear-gradient(135deg,#d4d4d8,#a1a1aa); color:#18181b; }
+  .bro { background:linear-gradient(135deg,#b45309,#7c2d12); color:#fde68a; }
+  .report { margin:14px 20px 18px; padding:14px; border-radius:10px; background:linear-gradient(135deg,rgba(59,130,246,.15),rgba(37,99,235,.05)); border-left:3px solid #2563eb; font-size:13px; line-height:1.55; color:#d8dcea; font-style:italic; }
+  .foot { text-align:center; font-size:10px; color:#565c70; padding:0 20px 18px; line-height:1.5; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="top">
+    <div class="ovr"><div class="num">58</div><div class="tier">SAPPHIRE</div></div>
+    <div class="id">
+      <div class="pos">SG · Combo Guard</div>
+      <div class="name">LUIS</div>
+      <div class="team">Viral Editz · @itsluisc · Rookie (7 mo)</div>
+    </div>
+  </div>
+  <div class="meta">
+    <div><b>3</b>repos</div>
+    <div><b>7</b>contribs</div>
+    <div><b>7mo</b>in league</div>
+    <div><b>3</b>followers</div>
+  </div>
+
+  <h3>Attributes</h3>
+  <div class="attr"><span>Tool Taste (film study)</span><span class="stars">★★★★☆</span></div>
+  <div class="attr"><span>Team Chemistry</span><span class="stars">★★★★☆</span></div>
+  <div class="attr"><span>Trajectory</span><span class="stars">★★★☆☆</span></div>
+  <div class="attr"><span>Public Output</span><span class="stars">★<span class="off">★★★★</span></span></div>
+  <div class="attr"><span>Experience</span><span class="stars">★<span class="off">★★★★</span></span></div>
+
+  <h3>Strengths &amp; Weaknesses</h3>
+  <div class="cols">
+    <div class="box g"><h4>Strengths</h4><ul>
+      <li>Forks the EXACT right film: hyperframes, capcut-cli, glitch-engine — a video-AI apprenticeship</li>
+      <li>Inner circle access: Viral Editz org + two private builds with Drey (skills, frictionless)</li>
+      <li>Roommate advantage — film room is 10 feet away</li>
+    </ul></div>
+    <div class="box r"><h4>Weaknesses</h4><ul>
+      <li>Box score is empty: 1 commit all year, 3 repos (all forks, zero originals)</li>
+      <li>7 months in, still no first shot — no owned project on the board</li>
+      <li>Everything happens in someone else's gym</li>
+    </ul></div>
+  </div>
+
+  <h3>Badges</h3>
+  <div class="badges">
+    <span class="badge sil">Video Native</span>
+    <span class="badge bro">Film Room Rat</span>
+    <span class="badge bro">Rookie Contract</span>
+  </div>
+
+  <div class="report">"The handle is still warm — 7 months old. But watch WHAT he studies, not what he's posted: the forks are a curated video-AI curriculum and the private reps with Drey don't show on the stat sheet. Empty box score, real upside. First owned repo bumps him 10 points overnight."</div>
+
+  <div class="foot">Scouted Aug 24, 2026 · github.com/itsluisc · Roommate · OVR from public GitHub data only</div>
+</div>
+</body>
+</html>
